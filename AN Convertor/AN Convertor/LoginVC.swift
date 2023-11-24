@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginVC: UIViewController {
 
@@ -15,7 +16,18 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var emailTF: UITextField!
+    
+    @IBOutlet weak var passwordTF: UITextField!
+    
+    @IBOutlet weak var loginBTN: UIButton!
+    
+    @IBOutlet weak var errorLBL: UILabel!
+    
+    @IBAction func loginClicked(_ sender: UIButton) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 

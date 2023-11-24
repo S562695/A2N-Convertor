@@ -174,8 +174,11 @@
                                         <rect key="frame" x="0.0" y="108" width="313" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                        <connections>
+                                            <action selector="loginClicked:" destination="HBx-PD-6Fg" eventType="touchUpInside" id="hDk-gV-lNy"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwg-hH-Mks">
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwg-hH-Mks">
                                         <rect key="frame" x="0.0" y="162.33333333333331" width="313" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
@@ -193,6 +196,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login Page" id="FWd-Fd-U5I"/>
+                    <connections>
+                        <outlet property="emailTF" destination="HwY-es-1jp" id="diw-4Y-Kmd"/>
+                        <outlet property="errorLBL" destination="fwg-hH-Mks" id="bh3-rr-j2U"/>
+                        <outlet property="loginBTN" destination="90N-Xq-WF2" id="jPf-aO-2aO"/>
+                        <outlet property="passwordTF" destination="rOq-z1-xlM" id="ItH-Ir-aqs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nN-mF-hqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -260,6 +269,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUpClicked:" destination="lfZ-ZP-zNX" eventType="touchUpInside" id="Dtr-Mc-4N4"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZc-Iu-ozV">
                                         <rect key="frame" x="0.0" y="300" width="313" height="20.333333333333314"/>
@@ -285,6 +297,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="LBD-7F-f55"/>
+                    <connections>
+                        <outlet property="emailTF" destination="u0j-Hb-I6N" id="sGR-nu-hPh"/>
+                        <outlet property="errorLBL" destination="IZc-Iu-ozV" id="FMC-wg-jth"/>
+                        <outlet property="firstNameTF" destination="QjP-pX-fkW" id="nnR-IH-mZ7"/>
+                        <outlet property="lastNameTF" destination="TIq-9q-HYp" id="6Vw-Ht-NxF"/>
+                        <outlet property="passwordTF" destination="EoY-Dh-joM" id="qZp-SP-Xte"/>
+                        <outlet property="signUpBTN" destination="R5Q-w6-mp5" id="bZX-tZ-Yez"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRe-dx-KXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

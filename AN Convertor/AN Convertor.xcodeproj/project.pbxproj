@@ -52,6 +52,8 @@
 		11A44DE02B0D494D008CB336 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 11A44DDF2B0D494D008CB336 /* Lottie */; };
 		11A44DE32B0D49FD008CB336 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 11A44DE22B0D49FD008CB336 /* SDWebImageSwiftUI */; };
 		11A44DE62B0D4A67008CB336 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 11A44DE52B0D4A67008CB336 /* Alamofire */; };
+		11A44DE82B10E06C008CB336 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A44DE72B10E06C008CB336 /* Utilities.swift */; };
+		11A44DEA2B10E299008CB336 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A44DE92B10E299008CB336 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		11A44D9E2B0D4382008CB336 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		11A44DA02B0D439B008CB336 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		11A44DA22B0D443B008CB336 /* StartPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageVC.swift; sourceTree = "<group>"; };
+		11A44DE72B10E06C008CB336 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		11A44DE92B10E299008CB336 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +181,9 @@
 				11A44D6F2B0D42D8008CB336 /* Main.storyboard */,
 				11A44DA22B0D443B008CB336 /* StartPageVC.swift */,
 				11A44D9C2B0D4365008CB336 /* SignUpVC.swift */,
+				11A44DE92B10E299008CB336 /* Constants.swift */,
 				11A44D9E2B0D4382008CB336 /* LoginVC.swift */,
+				11A44DE72B10E06C008CB336 /* Utilities.swift */,
 				11A44DA02B0D439B008CB336 /* HomeVC.swift */,
 				11A44D752B0D42D9008CB336 /* Assets.xcassets */,
 				11A44D772B0D42D9008CB336 /* LaunchScreen.storyboard */,
@@ -380,7 +386,9 @@
 				11A44DA12B0D439B008CB336 /* HomeVC.swift in Sources */,
 				11A44D742B0D42D8008CB336 /* AN_Convertor.xcdatamodeld in Sources */,
 				11A44D9F2B0D4382008CB336 /* LoginVC.swift in Sources */,
+				11A44DEA2B10E299008CB336 /* Constants.swift in Sources */,
 				11A44D6A2B0D42D8008CB336 /* AppDelegate.swift in Sources */,
+				11A44DE82B10E06C008CB336 /* Utilities.swift in Sources */,
 				11A44D9D2B0D4365008CB336 /* SignUpVC.swift in Sources */,
 				11A44D6C2B0D42D8008CB336 /* SceneDelegate.swift in Sources */,
 			);
