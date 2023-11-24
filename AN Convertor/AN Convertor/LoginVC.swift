@@ -49,11 +49,11 @@ class LoginVC: UIViewController {
                 self.errorLBL.alpha = 1
             }
             else {
-                let HomeVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.HomeVC) as? HomeVC
-                self.view.window?.rootViewController = HomeVC
-                self.view.window?.makeKeyAndVisible()
+                
+                self.performSegue(withIdentifier: "homeSegue", sender: self)
             }
         }
+    }
     }
     
     /*
@@ -66,4 +66,4 @@ class LoginVC: UIViewController {
     }
     */
 
-}
+

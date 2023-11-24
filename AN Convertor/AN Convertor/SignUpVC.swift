@@ -102,12 +102,13 @@ class SignUpVC: UIViewController {
                     }
                     
                     // Transition to the home screen
-                    self.transitionToHome()
+                    self.performSegue(withIdentifier: "homeSegue", sender: self)
                 }
                 
             }
         }
     }
+    
     
     func showError(_ message:String) {
         
@@ -115,13 +116,7 @@ class SignUpVC: UIViewController {
         errorLBL.alpha = 1
     }
     
-    func transitionToHome() {
-        
-        let homeVC = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeVC) as? HomeVC
-        view.window?.rootViewController = homeVC
-        view.window?.makeKeyAndVisible()
-        
-    }
+    
 
     /*
     // MARK: - Navigation
