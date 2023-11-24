@@ -54,6 +54,7 @@
 		11A44DE62B0D4A67008CB336 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 11A44DE52B0D4A67008CB336 /* Alamofire */; };
 		11A44DE82B10E06C008CB336 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A44DE72B10E06C008CB336 /* Utilities.swift */; };
 		11A44DEA2B10E299008CB336 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A44DE92B10E299008CB336 /* Constants.swift */; };
+		11A44DEC2B10E881008CB336 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11A44DEB2B10E881008CB336 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		11A44DA22B0D443B008CB336 /* StartPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageVC.swift; sourceTree = "<group>"; };
 		11A44DE72B10E06C008CB336 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		11A44DE92B10E299008CB336 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		11A44DEB2B10E881008CB336 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				11A44DA02B0D439B008CB336 /* HomeVC.swift */,
 				11A44D752B0D42D9008CB336 /* Assets.xcassets */,
 				11A44D772B0D42D9008CB336 /* LaunchScreen.storyboard */,
+				11A44DEB2B10E881008CB336 /* GoogleService-Info.plist */,
 				11A44D7A2B0D42D9008CB336 /* Info.plist */,
 				11A44D722B0D42D8008CB336 /* AN_Convertor.xcdatamodeld */,
 			);
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11A44D792B0D42D9008CB336 /* LaunchScreen.storyboard in Resources */,
+				11A44DEC2B10E881008CB336 /* GoogleService-Info.plist in Resources */,
 				11A44D762B0D42D9008CB336 /* Assets.xcassets in Resources */,
 				11A44D712B0D42D8008CB336 /* Main.storyboard in Resources */,
 			);

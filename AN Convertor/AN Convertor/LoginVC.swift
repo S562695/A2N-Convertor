@@ -12,8 +12,20 @@ class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUpElements()
         // Do any additional setup after loading the view.
+    }
+    
+    func setUpElements() {
+        
+        // Hide the error label
+        errorLBL.alpha = 0
+        
+        // Style the elements
+        Utilities.styleTextField(emailTF)
+        Utilities.styleTextField(passwordTF)
+        Utilities.styleFilledButton(loginBTN)
+        
     }
     
     @IBOutlet weak var emailTF: UITextField!
@@ -25,7 +37,23 @@ class LoginVC: UIViewController {
     @IBOutlet weak var errorLBL: UILabel!
     
     @IBAction func loginClicked(_ sender: UIButton) {
+        let email = emailTF.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordTF.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
+        // Signing in the user
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            
+            if error != nil {
+                // Couldn't sign in
+                self.errorLBL.text = error!.localizedDescription
+                self.errorLBL.alpha = 1
+            }
+            else {
+                let HomeVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.HomeVC) as? HomeVC
+                self.view.window?.rootViewController = HomeVC
+                self.view.window?.makeKeyAndVisible()
+            }
+        }
     }
     
     /*
