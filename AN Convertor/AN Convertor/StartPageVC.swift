@@ -1,5 +1,5 @@
 //
-//  SignUpVC.swift
+//  StartPageVC.swift
 //  AN Convertor
 //
 //  Created by Naga Lakshmi on 11/21/23.
@@ -7,14 +7,13 @@
 
 import UIKit
 
-class SignUpVC: UIViewController {
+class StartPageVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
     
 
     /*
