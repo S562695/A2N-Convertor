@@ -8,6 +8,6 @@
 import Foundation
 struct Constants {
     struct Storyboard {
-        static let HomeVC = "HomeVC"
+        static let homeVC = "HomeVC"
     }
 }
