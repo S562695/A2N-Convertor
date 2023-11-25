@@ -102,7 +102,7 @@ class SignUpVC: UIViewController {
                     }
                     
                     // Transition to the home screen
-                    self.performSegue(withIdentifier: "homeSegue", sender: self)
+                    self.performSegue(withIdentifier: "loginsegue", sender: self)
                 }
                 
             }
