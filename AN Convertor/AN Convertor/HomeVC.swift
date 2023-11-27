@@ -7,9 +7,15 @@
 
 import UIKit
 import SoundAnalysis
+import AVFoundation
+import AnimatedGradientView
 class HomeVC: UIViewController {
 
     
+    var audioPlayer: AVAudioPlayer?
+    
+    
+    @IBOutlet weak var Play: UIButton!
     
     
     @IBOutlet weak var pview: UIPickerView!
@@ -29,24 +35,7 @@ class HomeVC: UIViewController {
     
     @IBAction func TransformAction(_ sender: UIButton) {
         
-        switch(inputfile){
-            
-        case "king":
-             audioFileURL = Bundle.main.url(forResource: "king", withExtension: "mp3")!
-            
-        case "queen":
-             audioFileURL = Bundle.main.url(forResource: "queen", withExtension: "mp3")!
-            
-        case "bishop":
-             audioFileURL = Bundle.main.url(forResource: "bishop", withExtension: "mp3")!
-        case "elephant":
-             audioFileURL = Bundle.main.url(forResource: "elephant", withExtension: "mp3")!
-        case "sippoi":
-             audioFileURL = Bundle.main.url(forResource: "sippoi", withExtension: "mp3")!
-        default:
-             audioFileURL = Bundle.main.url(forResource: "background", withExtension: "mp3")!
-            break
-        }
+        fileToLoad()
         classifySound()
         //var imgArr:[UIImage] = []
         print(observer.classificationResult)
@@ -68,13 +57,64 @@ class HomeVC: UIViewController {
         observer.imageColl.removeAll()
     }
     
+    func fileToLoad(){
+        switch(inputfile){
+            
+        case "king":
+             audioFileURL = Bundle.main.url(forResource: "king", withExtension: "mp3")!
+            
+        case "queen":
+             audioFileURL = Bundle.main.url(forResource: "queen", withExtension: "mp3")!
+            
+        case "bishop":
+             audioFileURL = Bundle.main.url(forResource: "bishop", withExtension: "mp3")!
+        case "elephant":
+             audioFileURL = Bundle.main.url(forResource: "elephant", withExtension: "mp3")!
+        case "sippoi":
+             audioFileURL = Bundle.main.url(forResource: "sippoi", withExtension: "mp3")!
+        default:
+             audioFileURL = Bundle.main.url(forResource: "background", withExtension: "mp3")!
+            break
+        }
+    }
     
+    @IBAction func TunePlay(_ sender: UIButton) {
+        fileToLoad()
+        
+        do{
+            audioPlayer = try! AVAudioPlayer(contentsOf: audioFileURL)
+            audioPlayer?.play()
+        }
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let animatedGradient = AnimatedGradientView(frame: view.bounds)
+        animatedGradient.direction = .up
+        animatedGradient.animationValues = [(colors: ["#2BC0E4", "#EAECC6"], .up, .axial),
+        (colors: ["#833ab4", "#fd1d1d", "#fcb045"], .right, .axial),
+        (colors: ["#003973", "#E5E5BE"], .down, .axial),
+        (colors: ["#1E9600", "#FFF200", "#FF0000"], .left, .axial)]
+        view.insertSubview(animatedGradient, at: 0)
+        
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem
         pview.delegate=self
         pview.dataSource=self
+        
+        let animatedGradient = AnimatedGradientView(frame: view.bounds)
+        animatedGradient.direction = .up
+        animatedGradient.animationValues = [(colors: ["#2BC0E4", "#EAECC6"], .up, .axial),
+        (colors: ["#833ab4", "#fd1d1d", "#fcb045"], .right, .axial),
+        (colors: ["#003973", "#E5E5BE"], .down, .axial),
+        (colors: ["#1E9600", "#FFF200", "#FF0000"], .left, .axial)]
+        view.insertSubview(animatedGradient, at: 0)
+        
+
         // Do any additional setup after loading the view.
     }
     

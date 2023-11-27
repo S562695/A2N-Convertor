@@ -7,17 +7,54 @@
 
 import UIKit
 import AVKit
-
+import Lottie
+import AnimatedGradientView
 class StartPageVC: UIViewController {
     var videoPlayer:AVPlayer?
+    
+    
+    
+    @IBOutlet weak var logoAnimationView: LottieAnimationView!
     
     var videoPlayerLayer:AVPlayerLayer?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        playAnimation()
         // Do any additional setup after loading the view.
+        
+        let animatedGradient = AnimatedGradientView(frame: view.bounds)
+        animatedGradient.direction = .up
+        animatedGradient.animationValues = [(colors: ["#2BC0E4", "#EAECC6"], .up, .axial),
+        (colors: ["#833ab4", "#fd1d1d", "#fcb045"], .right, .axial),
+        (colors: ["#003973", "#E5E5BE"], .down, .axial),
+        (colors: ["#1E9600", "#FFF200", "#FF0000"], .left, .axial)]
+        view.insertSubview(animatedGradient, at: 0)
+        
+
+        
+        
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        let animatedGradient = AnimatedGradientView(frame: view.bounds)
+        animatedGradient.direction = .up
+        animatedGradient.animationValues = [(colors: ["#2BC0E4", "#EAECC6"], .up, .axial),
+        (colors: ["#833ab4", "#fd1d1d", "#fcb045"], .right, .axial),
+        (colors: ["#003973", "#E5E5BE"], .down, .axial),
+        (colors: ["#1E9600", "#FFF200", "#FF0000"], .left, .axial)]
+        view.insertSubview(animatedGradient, at: 0)
+        
+
+        playAnimation()
+    }
+    
+    func playAnimation(){
+        logoAnimationView.contentMode =  .scaleAspectFit
+                   logoAnimationView.loopMode = .loop
+                   
+                   logoAnimationView.animationSpeed=0.5
+                   logoAnimationView.play()
+    }
     
    
     /*

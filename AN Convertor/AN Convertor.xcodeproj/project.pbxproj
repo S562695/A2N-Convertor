@@ -61,6 +61,8 @@
 		A404160A2B11999300F3BE48 /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A40416092B11999300F3BE48 /* background.mp3 */; };
 		A404160D2B11A38100F3BE48 /* elephant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A404160B2B11A38100F3BE48 /* elephant.mp3 */; };
 		A404160E2B11A38100F3BE48 /* bishop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A404160C2B11A38100F3BE48 /* bishop.mp3 */; };
+		A40416122B143A9F00F3BE48 /* jk.json in Resources */ = {isa = PBXBuildFile; fileRef = A40416112B143A9F00F3BE48 /* jk.json */; };
+		A40416142B14421400F3BE48 /* NotePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40416132B14421400F3BE48 /* NotePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,8 @@
 		A40416092B11999300F3BE48 /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
 		A404160B2B11A38100F3BE48 /* elephant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elephant.mp3; sourceTree = "<group>"; };
 		A404160C2B11A38100F3BE48 /* bishop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bishop.mp3; sourceTree = "<group>"; };
+		A40416112B143A9F00F3BE48 /* jk.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jk.json; sourceTree = "<group>"; };
+		A40416132B14421400F3BE48 /* NotePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +202,8 @@
 				11A44DA22B0D443B008CB336 /* StartPageVC.swift */,
 				11A44DE72B10E06C008CB336 /* Utilities.swift */,
 				11A44DA02B0D439B008CB336 /* HomeVC.swift */,
+				A40416132B14421400F3BE48 /* NotePage.swift */,
+				A40416112B143A9F00F3BE48 /* jk.json */,
 				11A44D752B0D42D9008CB336 /* Assets.xcassets */,
 				A40415FB2B116BB200F3BE48 /* MusicNote.mlmodel */,
 				A40416082B11987300F3BE48 /* InputFiles */,
@@ -390,6 +396,7 @@
 				11A44DEC2B10E881008CB336 /* GoogleService-Info.plist in Resources */,
 				11A44D762B0D42D9008CB336 /* Assets.xcassets in Resources */,
 				A40416052B11982300F3BE48 /* queen.mp3 in Resources */,
+				A40416122B143A9F00F3BE48 /* jk.json in Resources */,
 				A404160D2B11A38100F3BE48 /* elephant.mp3 in Resources */,
 				11A44D712B0D42D8008CB336 /* Main.storyboard in Resources */,
 				A40416062B11982300F3BE48 /* sippoi.mp3 in Resources */,
@@ -417,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40416142B14421400F3BE48 /* NotePage.swift in Sources */,
 				11A44DA32B0D443B008CB336 /* StartPageVC.swift in Sources */,
 				11A44D6E2B0D42D8008CB336 /* ViewController.swift in Sources */,
 				11A44DA12B0D439B008CB336 /* HomeVC.swift in Sources */,

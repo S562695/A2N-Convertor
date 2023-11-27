@@ -14,24 +14,46 @@ class loginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.applyAnimatedGradient()
-        logoAnimationView.animation = LottieAnimation.named("LoginImage")
-        logoAnimationView.loopMode = .loop
-        logoAnimationView.play(){
-            [weak self] _ in
-            self?.logoAnimationView.isHidden = false
-        }
+        playAnimation()
+        applyAnimatedGradient()
+        let animatedGradient = AnimatedGradientView(frame: view.bounds)
+        animatedGradient.direction = .up
+        animatedGradient.animationValues = [(colors: ["#2BC0E4", "#EAECC6"], .up, .axial),
+        (colors: ["#833ab4", "#fd1d1d", "#fcb045"], .right, .axial),
+        (colors: ["#003973", "#E5E5BE"], .down, .axial),
+        (colors: ["#1E9600", "#FFF200", "#FF0000"], .left, .axial)]
+        view.insertSubview(animatedGradient, at: 0)
+        
+
+//       // logoAnimationView.animation = LottieAnimation.named("Animation")
+//        logoAnimationView.loopMode = .loop
+//        logoAnimationView.play(){
+//            [weak self] _ in
+//            self?.logoAnimationView.isHidden = false
+//        }
         // Do any additional setup after loading the view.
     }
     
-    private func applyAnimatedGradient(){
+    override func viewDidAppear(_ animated: Bool) {
         let animatedGradient = AnimatedGradientView(frame: view.bounds)
         animatedGradient.direction = .up
-        animatedGradient.animationValues = [(colors: ["#2BCOE4", "#EAECC6"], .up, .axial),
-                                            (colors: ["#833ab4", "#fd1d1d", "fcb045"], .right, .axial),
-                                            (colors: ["#003973", "#E6E68E"], .down, .axial),
-                                            (colors: ["#1E9600", "#FFF200", "FF0000"], .left, .axial)]
+        animatedGradient.animationValues = [(colors: ["#2BC0E4", "#EAECC6"], .up, .axial),
+        (colors: ["#833ab4", "#fd1d1d", "#fcb045"], .right, .axial),
+        (colors: ["#003973", "#E5E5BE"], .down, .axial),
+        (colors: ["#1E9600", "#FFF200", "#FF0000"], .left, .axial)]
         view.insertSubview(animatedGradient, at: 0)
+        
+        playAnimation()
+    }
+    
+     func applyAnimatedGradient(){
+         let animatedGradient = AnimatedGradientView(frame: view.bounds)
+                 animatedGradient.direction = .up
+                 animatedGradient.animationValues = [(colors: ["#2BC0E4", "#EAECC6"], .up, .axial),
+                 (colors: ["#833ab4", "#fd1d1d", "#fcb045"], .right, .axial),
+                 (colors: ["#003973", "#E5E5BE"], .down, .axial),
+                 (colors: ["#1E9600", "#FFF200", "#FF0000"], .left, .axial)]
+                 view.insertSubview(animatedGradient, at: 0)
     }
     
     @IBOutlet weak var logoAnimationView: LottieAnimationView!
@@ -86,6 +108,14 @@ class loginVC: UIViewController {
         errorLBL.text = ""
         errorLBL.isHidden = true
         //isNotARobotVerified = false
+    }
+    
+    func playAnimation(){
+        logoAnimationView.contentMode =  .scaleAspectFit
+                   logoAnimationView.loopMode = .loop
+                   
+                   logoAnimationView.animationSpeed=0.5
+                   logoAnimationView.play()
     }
     
     private func showError(message: String) {
