@@ -64,7 +64,7 @@
                                                             <color key="baseBackgroundColor" red="0.3724888724" green="0.59971232230000004" blue="0.22777401520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <segue destination="lfZ-ZP-zNX" kind="show" id="fPY-bj-cQd"/>
+                                                            <segue destination="lfZ-ZP-zNX" kind="show" id="98R-cf-yva"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjd-Rm-yMN">
@@ -75,7 +75,7 @@
                                                             <color key="baseBackgroundColor" red="0.76942896839999997" green="0.72684983780000001" blue="0.65633055139999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <segue destination="HBx-PD-6Fg" kind="show" id="ayd-ah-pww"/>
+                                                            <segue destination="HBx-PD-6Fg" kind="show" id="4zk-65-Rza"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -107,7 +107,7 @@
         <!--A2N Convertor🎼-->
         <scene sceneID="EpD-bI-2fq">
             <objects>
-                <viewController id="HBx-PD-6Fg" customClass="LoginVC" customModule="AN_Convertor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HBx-PD-6Fg" customClass="loginVC" customModule="AN_Convertor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="26m-EJ-aYG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,6 +159,9 @@
                                                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                                                             <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="notARobotButtonClicked:" destination="HBx-PD-6Fg" eventType="touchUpInside" id="TM6-ak-CQb"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -182,6 +185,9 @@
                                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                                             <color key="baseBackgroundColor" red="0.76942896839999997" green="0.72684983780000001" blue="0.65633055139999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="loginClicked:" destination="HBx-PD-6Fg" eventType="touchUpInside" id="B7o-D6-WxS"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5t-fo-a2S" userLabel="ResetBTN">
                                                         <rect key="frame" x="180.66666666666666" y="0.0" width="81.999999999999972" height="54.666666666666664"/>
@@ -190,6 +196,9 @@
                                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="resetClicked:" destination="HBx-PD-6Fg" eventType="touchUpInside" id="ULn-G5-myx"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmr-52-YDI">
                                                         <rect key="frame" x="270.66666666666669" y="0.0" width="82.333333333333314" height="54.666666666666664"/>
@@ -204,7 +213,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Create an Account"/>
                                                 <connections>
-                                                    <segue destination="lfZ-ZP-zNX" kind="show" id="0SQ-Gk-pqo"/>
+                                                    <segue destination="lfZ-ZP-zNX" kind="show" id="Mta-le-53v"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLe-3K-140">
@@ -235,8 +244,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="A2N Convertor🎼" id="FWd-Fd-U5I"/>
                     <connections>
-                        <outlet property="errorLBL" destination="oLe-3K-140" id="VQr-L1-BW2"/>
-                        <segue destination="umH-hX-D4f" kind="show" identifier="homeSegue" id="bNo-W6-DXr"/>
+                        <outlet property="emailTF" destination="oVb-R0-qLg" id="CHY-o7-KuJ"/>
+                        <outlet property="errorLBL" destination="oLe-3K-140" id="hSA-zE-jNG"/>
+                        <outlet property="loginBTN" destination="bom-YZ-6Ux" id="suN-hA-DUC"/>
+                        <outlet property="logoAnimationView" destination="FHi-B1-ZZe" id="VN5-DL-uHx"/>
+                        <outlet property="notARobotButton" destination="HsR-o7-x8i" id="X7l-XM-QKm"/>
+                        <outlet property="passwordTF" destination="3z0-b4-fwV" id="P2G-yT-PXJ"/>
+                        <outlet property="resetBTN" destination="m5t-fo-a2S" id="ex6-aL-PfY"/>
+                        <outlet property="robotCheck" destination="rAH-Yl-7v4" id="zWF-2U-l6L"/>
+                        <segue destination="umH-hX-D4f" kind="show" identifier="homeSegue" id="4FP-ID-28Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nN-mF-hqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -376,7 +392,7 @@
         <!--A2N Convertor🎼-->
         <scene sceneID="1dV-0L-YJf">
             <objects>
-                <viewController id="lfZ-ZP-zNX" customClass="SignUpVC" customModule="AN_Convertor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lfZ-ZP-zNX" customClass="signUpVC" customModule="AN_Convertor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ats-rC-eyB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -517,6 +533,9 @@
                                                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                                                     <color key="baseBackgroundColor" red="0.3724888724" green="0.59971232230000004" blue="0.22777401520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="signUpClicked:" destination="lfZ-ZP-zNX" eventType="touchUpInside" id="ICE-jF-khz"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tO4-Uv-gfI" userLabel="ResetBTN">
                                                                 <rect key="frame" x="180.66666666666666" y="0.0" width="81.999999999999972" height="50"/>
@@ -525,6 +544,9 @@
                                                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="resetClicked:" destination="lfZ-ZP-zNX" eventType="touchUpInside" id="dFY-fU-aZ0"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hd-k5-SAc">
                                                                 <rect key="frame" x="270.66666666666669" y="0.0" width="82.333333333333314" height="50"/>
@@ -561,7 +583,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="A2N Convertor🎼" id="LBD-7F-f55"/>
                     <connections>
-                        <segue destination="umH-hX-D4f" kind="show" identifier="homeSegue" id="85W-hM-b2G"/>
+                        <outlet property="confirmPasswordTF" destination="8M7-en-W2k" id="ld0-1a-1fl"/>
+                        <outlet property="dobField" destination="PrE-9t-D7r" id="AEo-X7-FEF"/>
+                        <outlet property="emailTF" destination="oey-tp-ORT" id="LQZ-Ns-mcX"/>
+                        <outlet property="errorLBL" destination="Cg4-BI-WKJ" id="Cqf-PI-td0"/>
+                        <outlet property="firstNameTF" destination="T7r-v2-uGT" id="Ac4-v5-jfb"/>
+                        <outlet property="lastNameTF" destination="tPk-gA-CCT" id="L6d-wx-FuR"/>
+                        <outlet property="logoAnimationView" destination="nga-kO-se3" id="iMz-Ou-Isn"/>
+                        <outlet property="passwordTF" destination="LGT-kp-rhO" id="29h-Xl-XTT"/>
+                        <outlet property="resetBTN" destination="tO4-Uv-gfI" id="leW-a1-YIi"/>
+                        <outlet property="signUpBTN" destination="YSk-uI-XQE" id="8yQ-rD-BAH"/>
+                        <segue destination="umH-hX-D4f" kind="show" identifier="homeSegue" id="EgZ-DM-ait"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRe-dx-KXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -606,7 +638,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzO-G0-fkO">
-                                        <rect key="frame" x="0.0" y="37.3333333333333" width="373" height="239.66666666666657"/>
+                                        <rect key="frame" x="0.0" y="37.3333333333333" width="373" height="239.66666666666663"/>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9S8-4A-CL6">
                                         <rect key="frame" x="0.0" y="285" width="373" height="58.333333333333314"/>
@@ -654,8 +686,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bNo-W6-DXr"/>
-        <segue reference="0SQ-Gk-pqo"/>
+        <segue reference="EgZ-DM-ait"/>
+        <segue reference="Mta-le-53v"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="dha" width="88" height="198"/>
