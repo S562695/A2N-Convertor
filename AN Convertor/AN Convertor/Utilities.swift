@@ -26,6 +26,9 @@ class Utilities {
         
     }
     
+    
+    var notes = ["Sa","Re","Ga","Ma","Pa","Dha","Ni","Background"]
+    
     static func styleFilledButton(_ button:UIButton) {
         
         // Filled rounded corner style

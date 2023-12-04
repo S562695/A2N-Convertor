@@ -131,7 +131,16 @@ class signUpVC: UIViewController {
                 if let error = error {
                     self?.showError(message: error.localizedDescription)
                 } else {
-                    self?.performSegue(withIdentifier: "homeSegue", sender: self)
+                    
+                    let alert = UIAlertController(title: "SignUp Status", message: "Your Account has been created Successfully, Please login to Continue ☺️ ", preferredStyle: .alert)
+                    
+                    let okAction = UIAlertAction(title:"OK", style: .default) { (action) in self?.performSegue(withIdentifier: "loginSegue", sender: self)
+                    }
+                    alert.addAction(okAction)
+
+                    self?.present(alert, animated: true, completion: nil)
+                    
+                    
                 }
             }
         }

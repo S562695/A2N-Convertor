@@ -22,7 +22,7 @@ class HomeVC: UIViewController {
     
     @IBOutlet weak var imageIV: UIImageView!
     
-    let testlist = ["king","queen","bishop","elephant","sippoi"]
+    let testlist = ["Sa","Re","Ga","Ma","Pa","Dha","Ni","king","queen","bishop","elephant","sippoi"]
     var inputfile = "background"
     var imageColl:[String] = []
     var result:String = ""
@@ -41,13 +41,21 @@ class HomeVC: UIViewController {
         print(observer.classificationResult)
         print(observer.imageColl)
         
-        let images = observer.imageColl.compactMap { UIImage(named: $0) }
+        switch(inputfile){
+        case "Sa","Re","Ga","Ma","Pa","Dha","Ni":
+            imageIV.image = UIImage(named: observer.imageColl[0].lowercased())
+        default:
+            let images = observer.imageColl.compactMap { UIImage(named: $0) }
 
                // Function to combine images horizontally
                let compositeImage = combineImagesHorizontally(images: images)
 
                // Set the composite image to the UIImageView
                imageIV.image = compositeImage
+            break
+        }
+        
+            
         
         if(inputfile.elementsEqual("background")){
             let alert = UIAlertController(title: "Missing Selection", message: "Please select any one of the below mentioned input file", preferredStyle: .alert)
@@ -58,8 +66,11 @@ class HomeVC: UIViewController {
     }
     
     func fileToLoad(){
+        var str = inputfile
         switch(inputfile){
-            
+           
+        case "Sa","Re","Ga","Ma","Pa","Dha","Ni":
+            audioFileURL = Bundle.main.url(forResource: str, withExtension: "mp3")!
         case "king":
              audioFileURL = Bundle.main.url(forResource: "king", withExtension: "mp3")!
             
