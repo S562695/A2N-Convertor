@@ -10,16 +10,14 @@ import AVKit
 import Lottie
 import AnimatedGradientView
 class StartPageVC: UIViewController {
-    var videoPlayer:AVPlayer?
     
     
     
     @IBOutlet weak var logoAnimationView: LottieAnimationView!
     
-    var videoPlayerLayer:AVPlayerLayer?
     override func viewDidLoad() {
         super.viewDidLoad()
-        playAnimation()
+        /*playAnimation()
         // Do any additional setup after loading the view.
         
         let animatedGradient = AnimatedGradientView(frame: view.bounds)
@@ -28,7 +26,7 @@ class StartPageVC: UIViewController {
         (colors: ["#833ab4", "#fd1d1d", "#fcb045"], .right, .axial),
         (colors: ["#003973", "#E5E5BE"], .down, .axial),
         (colors: ["#1E9600", "#FFF200", "#FF0000"], .left, .axial)]
-        view.insertSubview(animatedGradient, at: 0)
+        view.insertSubview(animatedGradient, at: 0)*/
         
 
         

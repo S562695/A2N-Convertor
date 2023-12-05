@@ -10,11 +10,7 @@ import SoundAnalysis
 import AVFoundation
 import AnimatedGradientView
 class HomeVC: UIViewController {
-
-    
     var audioPlayer: AVAudioPlayer?
-    
-    
     @IBOutlet weak var Play: UIButton!
     
     
