@@ -51,9 +51,9 @@
 		11A44DE32B0D49FD008CB336 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 11A44DE22B0D49FD008CB336 /* SDWebImageSwiftUI */; };
 		11A44DE62B0D4A67008CB336 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 11A44DE52B0D4A67008CB336 /* Alamofire */; };
 		11A44DE82B10E06C008CB336 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A44DE72B10E06C008CB336 /* Utilities.swift */; };
-		11A44DEC2B10E881008CB336 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11A44DEB2B10E881008CB336 /* GoogleService-Info.plist */; };
 		11A44DFA2B142719008CB336 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A44DF92B142719008CB336 /* loginVC.swift */; };
 		11A44DFC2B14272D008CB336 /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A44DFB2B14272D008CB336 /* signUpVC.swift */; };
+		11BEAB822B1F527700A1E003 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11BEAB812B1F527700A1E003 /* GoogleService-Info.plist */; };
 		A40415FE2B116C1200F3BE48 /* king.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A40415FD2B116C1200F3BE48 /* king.mp3 */; };
 		A40416052B11982300F3BE48 /* queen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A40416012B11982300F3BE48 /* queen.mp3 */; };
 		A40416062B11982300F3BE48 /* sippoi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A40416022B11982300F3BE48 /* sippoi.mp3 */; };
@@ -114,9 +114,9 @@
 		11A44DA02B0D439B008CB336 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		11A44DA22B0D443B008CB336 /* StartPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageVC.swift; sourceTree = "<group>"; };
 		11A44DE72B10E06C008CB336 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		11A44DEB2B10E881008CB336 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		11A44DF92B142719008CB336 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		11A44DFB2B14272D008CB336 /* signUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
+		11BEAB812B1F527700A1E003 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A40415FD2B116C1200F3BE48 /* king.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = king.mp3; sourceTree = "<group>"; };
 		A40416012B11982300F3BE48 /* queen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = queen.mp3; sourceTree = "<group>"; };
 		A40416022B11982300F3BE48 /* sippoi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sippoi.mp3; sourceTree = "<group>"; };
@@ -238,8 +238,8 @@
 				11A44D752B0D42D9008CB336 /* Assets.xcassets */,
 				A40416082B11987300F3BE48 /* InputFiles */,
 				11A44D772B0D42D9008CB336 /* LaunchScreen.storyboard */,
-				11A44DEB2B10E881008CB336 /* GoogleService-Info.plist */,
 				11A44D7A2B0D42D9008CB336 /* Info.plist */,
+				11BEAB812B1F527700A1E003 /* GoogleService-Info.plist */,
 				11A44D722B0D42D8008CB336 /* AN_Convertor.xcdatamodeld */,
 			);
 			path = "AN Convertor";
@@ -443,7 +443,6 @@
 				A46FE89D2B1EEB6E00190B03 /* test05.m4a in Resources */,
 				A404160E2B11A38100F3BE48 /* bishop.mp3 in Resources */,
 				A46FE89B2B1EEB5F00190B03 /* test03.m4a in Resources */,
-				11A44DEC2B10E881008CB336 /* GoogleService-Info.plist in Resources */,
 				A46FE8772B1E38FC00190B03 /* Pa.mp3 in Resources */,
 				11A44D762B0D42D9008CB336 /* Assets.xcassets in Resources */,
 				A46FE89F2B1EEB7A00190B03 /* test01.m4a in Resources */,
@@ -451,6 +450,7 @@
 				A40416122B143A9F00F3BE48 /* jk.json in Resources */,
 				A404160D2B11A38100F3BE48 /* elephant.mp3 in Resources */,
 				A46FE8732B1E38C000190B03 /* Ma.mp3 in Resources */,
+				11BEAB822B1F527700A1E003 /* GoogleService-Info.plist in Resources */,
 				A46FE8712B1E38B300190B03 /* Ga.mp3 in Resources */,
 				11A44D712B0D42D8008CB336 /* Main.storyboard in Resources */,
 				A40416062B11982300F3BE48 /* sippoi.mp3 in Resources */,
