@@ -15,14 +15,14 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        let animatedGradient = AnimatedGradientView(frame: view.bounds)
-        animatedGradient.direction = .up
-        animatedGradient.animationValues = [(colors: ["#2BC0E4", "#EAECC6"], .up, .axial),
-        (colors: ["#833ab4", "#fd1d1d", "#fcb045"], .right, .axial),
-        (colors: ["#003973", "#E5E5BE"], .down, .axial),
-        (colors: ["#1E9600", "#FFF200", "#FF0000"], .left, .axial)]
-        view.insertSubview(animatedGradient, at: 0)
-        
+//        let animatedGradient = AnimatedGradientView(frame: view.bounds)
+//        animatedGradient.direction = .up
+//        animatedGradient.animationValues = [(colors: ["#2BC0E4", "#EAECC6"], .up, .axial),
+//        (colors: ["#833ab4", "#fd1d1d", "#fcb045"], .right, .axial),
+//        (colors: ["#003973", "#E5E5BE"], .down, .axial),
+//        (colors: ["#1E9600", "#FFF200", "#FF0000"], .left, .axial)]
+//        view.insertSubview(animatedGradient, at: 0)
+//        
 
         
         // Uncomment the following line to preserve selection between presentations

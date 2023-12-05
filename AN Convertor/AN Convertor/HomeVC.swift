@@ -18,7 +18,7 @@ class HomeVC: UIViewController {
     
     @IBOutlet weak var imageIV: UIImageView!
     
-    let testlist = ["Sa","Re","Ga","Ma","Pa","Dha","Ni","king","queen","bishop","elephant","sippoi"]
+    let testlist = ["Sa","Re","Ga","Ma","Pa","Dha","Ni","king","queen","bishop","elephant","sippoi","test01","test02","test03","test04","test05"]
     var inputfile = "background"
     var imageColl:[String] = []
     var result:String = ""
@@ -67,6 +67,8 @@ class HomeVC: UIViewController {
            
         case "Sa","Re","Ga","Ma","Pa","Dha","Ni":
             audioFileURL = Bundle.main.url(forResource: str, withExtension: "mp3")!
+        case "test01","test02","test03","test04","test05":
+            audioFileURL = Bundle.main.url(forResource: str, withExtension: "m4a")!
         case "king":
              audioFileURL = Bundle.main.url(forResource: "king", withExtension: "mp3")!
             
@@ -105,6 +107,17 @@ class HomeVC: UIViewController {
         view.insertSubview(animatedGradient, at: 0)
         
 
+       // playAnimation()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.view.subviews.first?.frame=self.view.bounds
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.view.subviews.first!.removeFromSuperview()
     }
     
     override func viewDidLoad() {

@@ -34,6 +34,16 @@ class loginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.view.subviews.first?.frame=self.view.bounds
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.view.subviews.first!.removeFromSuperview()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         let animatedGradient = AnimatedGradientView(frame: view.bounds)
         animatedGradient.direction = .up

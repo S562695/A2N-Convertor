@@ -72,6 +72,11 @@
 		A46FE87B2B1E391200190B03 /* Sa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A46FE87A2B1E391200190B03 /* Sa.mp3 */; };
 		A46FE87D2B1E3FA100190B03 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FE87C2B1E3FA100190B03 /* TableViewController.swift */; };
 		A46FE87F2B1E402000190B03 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46FE87E2B1E402000190B03 /* TableViewCell.swift */; };
+		A46FE8972B1EEB4B00190B03 /* test04.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A46FE8962B1EEB4B00190B03 /* test04.m4a */; };
+		A46FE8992B1EEB5600190B03 /* test02.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A46FE8982B1EEB5600190B03 /* test02.m4a */; };
+		A46FE89B2B1EEB5F00190B03 /* test03.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A46FE89A2B1EEB5F00190B03 /* test03.m4a */; };
+		A46FE89D2B1EEB6E00190B03 /* test05.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A46FE89C2B1EEB6E00190B03 /* test05.m4a */; };
+		A46FE89F2B1EEB7A00190B03 /* test01.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A46FE89E2B1EEB7A00190B03 /* test01.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +135,11 @@
 		A46FE87A2B1E391200190B03 /* Sa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Sa.mp3; path = ../Sa.mp3; sourceTree = "<group>"; };
 		A46FE87C2B1E3FA100190B03 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A46FE87E2B1E402000190B03 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A46FE8962B1EEB4B00190B03 /* test04.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test04.m4a; sourceTree = "<group>"; };
+		A46FE8982B1EEB5600190B03 /* test02.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test02.m4a; sourceTree = "<group>"; };
+		A46FE89A2B1EEB5F00190B03 /* test03.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test03.m4a; sourceTree = "<group>"; };
+		A46FE89C2B1EEB6E00190B03 /* test05.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test05.m4a; sourceTree = "<group>"; };
+		A46FE89E2B1EEB7A00190B03 /* test01.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test01.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,8 +269,13 @@
 				A46FE8742B1E38E200190B03 /* Ni.mp3 */,
 				A46FE8782B1E390800190B03 /* Re.mp3 */,
 				A46FE87A2B1E391200190B03 /* Sa.mp3 */,
+				A46FE89A2B1EEB5F00190B03 /* test03.m4a */,
+				A46FE8962B1EEB4B00190B03 /* test04.m4a */,
+				A46FE8982B1EEB5600190B03 /* test02.m4a */,
 				A46FE8762B1E38FC00190B03 /* Pa.mp3 */,
 				A46FE8702B1E38B300190B03 /* Ga.mp3 */,
+				A46FE89E2B1EEB7A00190B03 /* test01.m4a */,
+				A46FE89C2B1EEB6E00190B03 /* test05.m4a */,
 				A46FE8722B1E38C000190B03 /* Ma.mp3 */,
 				A40415FD2B116C1200F3BE48 /* king.mp3 */,
 				A404160C2B11A38100F3BE48 /* bishop.mp3 */,
@@ -422,11 +437,16 @@
 				11A44D792B0D42D9008CB336 /* LaunchScreen.storyboard in Resources */,
 				A40415FE2B116C1200F3BE48 /* king.mp3 in Resources */,
 				A46FE8752B1E38E200190B03 /* Ni.mp3 in Resources */,
+				A46FE8972B1EEB4B00190B03 /* test04.m4a in Resources */,
 				A46FE87B2B1E391200190B03 /* Sa.mp3 in Resources */,
+				A46FE8992B1EEB5600190B03 /* test02.m4a in Resources */,
+				A46FE89D2B1EEB6E00190B03 /* test05.m4a in Resources */,
 				A404160E2B11A38100F3BE48 /* bishop.mp3 in Resources */,
+				A46FE89B2B1EEB5F00190B03 /* test03.m4a in Resources */,
 				11A44DEC2B10E881008CB336 /* GoogleService-Info.plist in Resources */,
 				A46FE8772B1E38FC00190B03 /* Pa.mp3 in Resources */,
 				11A44D762B0D42D9008CB336 /* Assets.xcassets in Resources */,
+				A46FE89F2B1EEB7A00190B03 /* test01.m4a in Resources */,
 				A40416052B11982300F3BE48 /* queen.mp3 in Resources */,
 				A40416122B143A9F00F3BE48 /* jk.json in Resources */,
 				A404160D2B11A38100F3BE48 /* elephant.mp3 in Resources */,
